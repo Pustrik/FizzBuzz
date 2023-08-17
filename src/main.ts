@@ -33,10 +33,10 @@ const bootstrap = async () => {
     */
     const fizzBuzz = new Fizzbuzz(concreteRule1, new BaseIterator(0, 100))
 
-    /* Allows you to direct a stream split into chunks into a 'res' stream or a file */
+    // Allows you to direct a stream split into chunks into a 'res' stream or a file
     const stream = OutputConverter.toStream(fizzBuzz);
 
-    /* Allows to concatenate output mass or other manipulations */
+    // Allows to concatenate output mass or other manipulations
     const string = OutputConverter.toString(fizzBuzz);
 
     console.log(string)
